@@ -1,0 +1,247 @@
+:root {
+    --white: #fff;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: 'Roboto Slab' serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--white);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rm 2rm;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+:root {
+    --white: #fff;
+    --main-color: #015709;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: 'Roboto Slab' serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--white);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+
+section {
+    padding: 3rm 2rm;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.icon i {
+    height: 30px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.icon i:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 0.7rem 0.7rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.home-container {
+    background: url("../img/img/pizza-por-elas.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.title span{
+    color: var(--main-color);
+    text-transform: uppercase ;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 0.7rem;
+}
+.menu .box-container .box{
+    background-color: var(--black);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+}
+.menu .box-container .box .img{
+height: 7rem;
+}
+.menu .box-container .box h3{
+   font-size: 1.3rem;
+   padding: 1rem 0;
+    
+}
+.menu .box-container .box .price{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+.menu .box-container .box:hover > *{
+   letter-spacing: 0.1rem;
+}
+.menu .box-container .price span{
+   font-size: 1.1rem;
+   text-decoration: line-through;
+   font-weight: 200;
+}
+.rewiews .box-container .box .user{
+    height: 7rem;
+    border-radius: 50%;
+   width: 7rem;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.address p{
+    padding: 10px;
+    font-weight: 500;
+}
+
+footer{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: var(--bg);
+    border-top: var(--border);
+    padding: 3rem 1rem;
+    text-align: center;
+    
+}
+button{
+    font-size: 0.9rem;
+    background-color:white;
+    color: white;
+    border: var(--border);
+    padding: 0.7rem 0.7rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1rem;
+    border-radius: 5px; 
+    
+}
+button:hover{
+    letter-spacing: 0.1rem;
+}
+h1{
+   
+    text-align: center;
+}
+iframe{
+    text-align: center;
+}
