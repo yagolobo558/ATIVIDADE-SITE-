@@ -2,190 +2,210 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIZZA</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/img/palmeiras-1.svg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIZZA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/img/palmeiras-1.svg" type="image/x-icon">
 </head>
 
 <body>
 
-    <header class="header">
-        <section>
-            <a href="#" class="logo">
-                <img src="img/img/vdd.png" alt="Logo dev café">
-            </a>
-            <nav class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Menu</a>
-                <a href="#">Avaliações</a>
-                <a href="enderço.html">Endereço</a>
-            </nav>
+  <header class="header">
+    <section>
+      <a href="#" class="logo">
+        <img src="img/img/vdd.png" alt="Logo dev café">
+      </a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Menu</a>
+        <a href="#">Avaliações</a>
+        <a href="enderço.html">Endereço</a>
+      </nav>
 
-            <div class="icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="controles">
+        <button onclick="aumentarfonte(10)">A+</button>
+        <button onclick="diminuirfonte(-10)">A-</button>
+        <button onclick="contraste()">Alto Contraste</button>
 
-
-        </section>
-
-    </header>
-    <div class="home-container">
-        <section id="home">
-            <div class="container">
-                <h3>Melhor pizza do mundo
-
-
-                </h3>
-              
-                <a href="#" class="btn">Peça a sua agora</a>
-            </div>
-        </section>
-    </div>
-<br>
-    <section class="about" id="about">
-            <div class="content">
-                <h1>O que faz nossa pizza a melhor?</h1>
-                <p>Sua pizza é a melhor porque a massa é artesanal, crocante por fora e macia por dentro. O molho é feito com tomates frescos e ervas, criando um sabor equilibrado. O queijo é uma mistura de mozzarella de búfala e parmesão envelhecido, super cremoso e saboroso. Ingredientes como cogumelos, presunto de parma e pepperoni são escolhidos com carinho, garantindo harmonia no sabor. Finalizada com azeite de oliva extra virgem, sal grosso e manjericão fresco, cada mordida é uma explosão de sabor e qualidade. </p>
-                <a href="#" class="btn">Saiba mais</a>
-            </div>
+      </div>
+    </section>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
+    </div>
 
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
     </section>
 
-    <section class="menu" id="menu">
-        <h2 class="title">Nosso <span>Menu</span></h2>
-        <div class="box-container">
-          <!-- Cada .box representa um item do cardápio -->
-          <div class="box">
-            <img src="img/img/cala2.jpg" alt="" />
-            <h3>Pizza-Calabresa</h3>
-            <div class="price">R$ 42,99 </div>
-            <a href="#" class="btn">Adicione ao Carrinho</a>
-          </div>
-          <!-- Repetição para os outros cafés -->
-          <div class="box">
-            <img src="img/img/marg.jpg" alt="" />
-            <h3>Pizza-Marguerita</h3>
-            <div class="price">R$ 46,99 </div>
-            <a href="#" class="btn">Adicione ao Carrinho</a>
-          </div>
-          <div class="box">
-            <img src="img/img/fran2.jpg" alt="" />
-            <h3>Pizza-Frango e Catupiry</h3>
-            <div class="price">R$ 53,99 </div>
-            <a href="#" class="btn">Adicione ao Carrinho</a>
-          </div>
-          <div class="box">
-            <img src="img/img/prot.jpg" alt="" />
-            <h3>Pizza-Portuguesa</h3>
-            <div class="price">R$ 41,99 </div>
-            <a href="#" class="btn">Adicione ao Carrinho</a>
-          </div>
-          <div class="box">
-            <img src="img/img/rucil2.jpg" alt="" />
-            <h3>Pizza-Rúcula</h3>
-            <div class="price">R$ 45,99 </div>
-            <a href="#" class="btn">Adicione ao Carrinho</a>
-          </div>
-          <div class="box">
-            <img src="img/img/qq2.jpg" alt="" />
-            <h3>Pizza-Quatro Queijos</h3>
-            <div class="price">R$ 53,99 </div>
-            <a href="#" class="btn">Adicione ao Carrinho</a>
-          </div>
-        </div>
-      </section>
+  </header>
+  <div class="home-container">
+    <section id="home">
+      <div class="container">
+        <h3>Melhor pizza do mundo
 
-      <section class="review" id="review">
-        <h2 class="title">Nossos <span>Clientes</span></h2>
-        <div class="box-container">
-          <!-- Avaliação individual -->
-          <div class="box">
-            <img src="img/quote-img.png" alt="" />
-            <br>
-            <img src="img/img/henzi2.png" alt="foto-cliente" class="user" />
-            <h3>Henzo Huss</h3>
-            <!-- Estrelas de avaliação -->
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half-stroke"></i>
-            </div>
-          </div>
-          <!-- Outras avaliações -->
-          <div class="box">
-            <img src="img/quote-img.png" alt="" />
+
+        </h3>
+
+        <a href="#" class="btn">Peça a sua agora</a>
+      </div>
+    </section>
+  </div>
+  <br>
+  <section class="about" id="about">
+    <div class="content">
+      <h1>O que faz nossa pizza a melhor?</h1>
+      <p>Sua pizza é a melhor porque a massa é artesanal, crocante por fora e macia por dentro. O molho é feito com
+        tomates frescos e ervas, criando um sabor equilibrado. O queijo é uma mistura de mozzarella de búfala e parmesão
+        envelhecido, super cremoso e saboroso. Ingredientes como cogumelos, presunto de parma e pepperoni são escolhidos
+        com carinho, garantindo harmonia no sabor. Finalizada com azeite de oliva extra virgem, sal grosso e manjericão
+        fresco, cada mordida é uma explosão de sabor e qualidade. </p>
+      <a href="#" class="btn">Saiba mais</a>
+    </div>
+    </div>
+
+  </section>
+
+  <section class="menu" id="menu">
+    <h2 class="title">Nosso <span>Menu</span></h2>
+    <div class="box-container">
+      <!-- Cada .box representa um item do cardápio -->
+      <div class="box">
+        <img src="img/img/cala2.jpg" alt="" />
+        <h3>Pizza-Calabresa</h3>
+        <div class="price">R$ 42,99 </div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <!-- Repetição para os outros cafés -->
+      <div class="box">
+        <img src="img/img/marg.jpg" alt="" />
+        <h3>Pizza-Marguerita</h3>
+        <div class="price">R$ 46,99 </div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="img/img/fran2.jpg" alt="" />
+        <h3>Pizza-Frango e Catupiry</h3>
+        <div class="price">R$ 53,99 </div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="img/img/prot.jpg" alt="" />
+        <h3>Pizza-Portuguesa</h3>
+        <div class="price">R$ 41,99 </div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="img/img/rucil2.jpg" alt="" />
+        <h3>Pizza-Rúcula</h3>
+        <div class="price">R$ 45,99 </div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+      <div class="box">
+        <img src="img/img/qq2.jpg" alt="" />
+        <h3>Pizza-Quatro Queijos</h3>
+        <div class="price">R$ 53,99 </div>
+        <a href="#" class="btn">Adicione ao Carrinho</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="review" id="review">
+    <h2 class="title">Nossos <span>Clientes</span></h2>
+    <div class="box-container">
+      <!-- Avaliação individual -->
+      <div class="box">
+        <img src="img/quote-img.png" alt="" />
         <br>
-            <img src="img/img/eu.png" alt="foto-cliente" class="user" />
-            <h3>Yago Lobo</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-          <div class="box">
-            <img src="img/quote-img.png" alt="" />
-            <br>
-            <img src="img/img/luigi.png" alt="foto-cliente" class="user" />
-            <h3>Luigi Vasselo</h3>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-          </div>
+        <img src="img/img/henzi2.png" alt="foto-cliente" class="user" />
+        <h3>Henzo Huss</h3>
+        <!-- Estrelas de avaliação -->
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
         </div>
-      </section>
-  
-      <!-- Seção com o endereço e mapa do local -->
-      <section class="address" id="address">
-        <h2 class="title">Nosso <span>Endereço</span></h2>
-        
-       <button><a href="enderço.html">CLIQUE AQUI</a></button>
-         
-      </section>
-  
-      <footer class="footer">
-        <div class="footer-container">
-          <a href="#" class="logo">
-            <img src="img/img/vdd.png" alt="logo" />
-          </a>
-  
-          <div class="share">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-          </div>
-  
-          <nav class="footer-nav">
-            <a href="#">Home</a>
-            <a href="#about">Sobre</a>
-            <a href="#menu">Menu</a>
-            <a href="#review">Avaliações</a>
-            <a href="#address">Endereço</a>
-          </nav>
-  
-          <p class="footer-copy">
-            © 2025 Pizzaria Palestra Itália. Todos os direitos reservados.
-          </p>
+      </div>
+      <!-- Outras avaliações -->
+      <div class="box">
+        <img src="img/quote-img.png" alt="" />
+        <br>
+        <img src="img/img/eu.png" alt="foto-cliente" class="user" />
+        <h3>Yago Lobo</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
         </div>
-      </footer>
+      </div>
+      <div class="box">
+        <img src="img/quote-img.png" alt="" />
+        <br>
+        <img src="img/img/luigi.png" alt="foto-cliente" class="user" />
+        <h3>Luigi Vasselo</h3>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção com o endereço e mapa do local -->
+  <section class="address" id="address">
+    <h2 class="title">Nosso <span>Endereço</span></h2>
+
+    <button><a href="enderço.html">CLIQUE AQUI</a></button>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="#" class="logo">
+        <img src="img/img/vdd.png" alt="logo" />
+      </a>
+
+      <div class="share">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+
+      <nav class="footer-nav">
+        <a href="#">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#menu">Menu</a>
+        <a href="#review">Avaliações</a>
+        <a href="#address">Endereço</a>
+      </nav>
+
+      <p class="footer-copy">
+        © 2025 Pizzaria Palestra Itália. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
 
 </body>
 <script src="script.js"></script>

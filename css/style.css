@@ -125,6 +125,7 @@ section {
     height: 30px;
     color: var(--white);
     cursor: pointer;
+    width: 200px;
 }
 
 .icon i:hover {
@@ -226,7 +227,6 @@ footer{
 button{
     font-size: 0.9rem;
     background-color:white;
-    color: white;
     border: var(--border);
     padding: 0.7rem 0.7rem;
     display: inline-block;
@@ -245,3 +245,25 @@ h1{
 iframe{
     text-align: center;
 }
+#controle-fonte {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(245, 7, 7);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0.4px 8px black;
+    z-index: 1000;
+    font: black;
+}
+.controles {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
